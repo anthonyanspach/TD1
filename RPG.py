@@ -3,9 +3,7 @@
     # Theme!: Vampires (Zkyn) / Vampire Hunters (Koon)!
 
     # Battles
-        # Not sure I'm using the randint function correctly.
         # Help and Stats commands dont work in battles (becuase their not in the IF-loop?)
-        # Some how Mr. Lumbergh is healing during battles ?!?! so lost
         #
 
     # Stats to track:
@@ -53,7 +51,7 @@ def calc_player_attack():
     return randint(player['atk_min'], player['atk_max'])
 
 def calc_mrlumbergh_attack():
-        return randint(mr_lumbergh['attack_min'], mr_lumbergh['attack_max'])
+    return randint(mr_lumbergh['attack_min'], mr_lumbergh['attack_max'])
 
 # Game Path
 
@@ -65,7 +63,9 @@ while game_running == True:
     times_healed = 0
     times_hit_by_atk = 0
 
-    player = {'name': 'player', 'atk_min': 15, 'atk_max': 25, 'heal': 20, 'health': 100}
+    # Entities
+    player = {'name': 'player', 'atk_min': 10, 'atk_max': 20, 'heal': 20, 'health': 100}
+    mr_lumbergh = {'name': 'Mr.Lumbergh', 'attack_min': 10, 'attack_max': 20, 'health': 100}
 
     while new_game == True:
         print('||***||' * 1)
@@ -141,7 +141,6 @@ while game_running == True:
             while mrlumbergh_fight == True:
                 player_won = False
                 mr_lumbergh_won = False
-                mr_lumbergh = {'name': 'Mr.Lumbergh', 'attack_min': 10, 'attack_max': 20, 'health': 100}
                 print('---' * 10)
                 print('Please select an action')
                 print('1) Attack')
@@ -189,6 +188,12 @@ while game_running == True:
                     print('***' * 10)
                 if player_won == True or mr_lumbergh_won == True:
                     mrlumbergh_fight = False
+
+            while mrlumbergh_fight == False:
+                print('#something about winning and context on where the store is going w/ more choices')
+                #just to end the algo
+                mrlumbergh_fight = True
+
 
             # test code start
             print('faction_vamp = ' + str(faction_vamp))
