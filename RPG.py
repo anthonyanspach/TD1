@@ -4,8 +4,9 @@
 
     # Battles
         # Not sure I'm using the randint function correctly.
-        # Help and Stats commands dont work in battles (not in IFloop?)
+        # Help and Stats commands dont work in battles (becuase their not in the IF-loop?)
         # Some how Mr. Lumbergh is healing during battles ?!?! so lost
+        #
 
     # Stats to track:
         # Enemies Defeated?
@@ -154,48 +155,44 @@ while game_running == True:
                     print('---' * 10)
                     print(player['name'] + ' has Attack!')
                     print(mr_lumbergh['name'] + ' Attacks!')
-                    print(player['name'] + ' Has ' + str(player['health']) + ' Health!')
-                    print(mr_lumbergh['name'] + ' Has ' + str(mr_lumbergh['health']) + ' Health!')
                     if mr_lumbergh['health'] <= 0:
                         player_won = True
                     else:
                         player['health'] = player['health'] - calc_mrlumbergh_attack()
                         if player['health'] <= 0:
-                            monster_won = True
+                            mr_lumbergh_won = True
                 elif player_choice == '2':
                         player['health'] = player['health'] + player['heal']
                         player['health'] = player['health'] - calc_mrlumbergh_attack()
                         print('---' * 10)
                         print(player['name'] + ' Casts heal on self!')
                         print(mr_lumbergh['name'] + ' Attacks!')
-                        print(player['name'] + ' Has ' + str(player['health']) + ' Health!')
-                        print(mr_lumbergh['name'] + ' Has ' + str(mr_lumbergh['health']) + ' Health!')
                         if player['health'] <= 0:
-                            monster_won = True
+                            mr_lumbergh_won = True
                 elif player_choice == '3':
                         print('Exiting Game, Thanks for playing')
-                        new_round = False
+                        mrlumbergh_fight = False
                         game_running = False
                 else:
                         print('Invalid Input')
-                if player_won == False and mr_lumbergh == False:
-                        print(player['name'] + ' Has ' + str(player['health']) + ' Health')
-                        print(mr_lumbergh['hame'] + ' Has ' + str(mr_lumbergh['health']) + ' Health')
+                if player_won == False and mr_lumbergh_won == False:
+                    print(player['name'] + ' Has ' + str(player['health']) + ' Health!')
+                    print(mr_lumbergh['name'] + ' Has ' + str(mr_lumbergh['health']) + ' Health!')
                 elif player_won:
                     print('***' * 10)
-                    print(mr_lumbergh['name'] + ' has been Defeted! ' + player['name'] + ' Has Won!')
+                    print(mr_lumbergh['name'] + ' has been Defeated! ' + player['name'] + ' Has Won!')
                     print('***' * 10)
                 elif mr_lumbergh_won:
                     print('***' * 10)
-                    print(player['name'] + ' has been Defeted! ' + mr_lumbergh['Name'] + ' Has Won!')
+                    print(player['name'] + ' has been Defeted! ' + mr_lumbergh['name'] + ' Has Won!')
                     print('You Lose')
                     print('***' * 10)
                 if player_won == True or mr_lumbergh_won == True:
-                    new_round = False
+                    mrlumbergh_fight = False
 
             # test code start
-            print('faction_vamp = ' + str(faction_a))
-            print('faction_vamphunt = ' + str(faction_b))
+            print('faction_vamp = ' + str(faction_vamp))
+            print('faction_vamphunt = ' + str(faction_vamphunt))
             #test code end
 
         # Vampire Hunter Story:
