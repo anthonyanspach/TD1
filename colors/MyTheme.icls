@@ -1,9 +1,69 @@
 <scheme name="MyTheme" version="142" parent_scheme="Default">
+  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2020-02-05T12:01:38</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2020-02-05T12:01:58</property>
+    <property name="modified">2020-02-05T12:16:15</property>
     <property name="originalScheme">_@user_Default</property>
   </metaInfo>
+  <option name="LINE_SPACING" value="1.2" />
+  <option name="EDITOR_FONT_SIZE" value="30" />
+  <option name="EDITOR_FONT_NAME" value="Lucida Console" />
+  <option name="CONSOLE_FONT_NAME" value="Lucida Console" />
+  <colors>
+    <option name="CARET_ROW_COLOR" value="640596" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="640596" />
+    <option name="DOCUMENTATION_COLOR" value="590076" />
+    <option name="GUTTER_BACKGROUND" value="590076" />
+    <option name="LINE_NUMBERS_COLOR" value="ff7e00" />
+    <option name="SELECTION_FOREGROUND" value="590076" />
+    <option name="SEPARATOR_ABOVE_COLOR" value="8d8d8d" />
+    <option name="SEPARATOR_BELOW_COLOR" value="8d8d8d" />
+  </colors>
+  <attributes>
+    <option name="CONSOLE_ERROR_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="ff0004" />
+      </value>
+    </option>
+    <option name="CONSOLE_NORMAL_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="ff9600" />
+      </value>
+    </option>
+    <option name="CONSOLE_SYSTEM_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="1a38a" />
+      </value>
+    </option>
+    <option name="CONSOLE_USER_INPUT">
+      <value>
+        <option name="FOREGROUND" value="5bd510" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PY.DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="808080" />
+        <option name="BACKGROUND" value="ffffff" />
+        <option name="FONT_TYPE" value="3" />
+        <option name="EFFECT_COLOR" value="3c3f41" />
+        <option name="ERROR_STRIPE_COLOR" value="3c3f41" />
+      </value>
+    </option>
+    <option name="PY.DOC_COMMENT_TAG">
+      <value>
+        <option name="FOREGROUND" value="ff9600" />
+        <option name="BACKGROUND" value="640596" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="808080" />
+        <option name="ERROR_STRIPE_COLOR" value="ff0004" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="TEXT">
+      <value />
+    </option>
+  </attributes>
 </scheme>
